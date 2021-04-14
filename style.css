@@ -82,10 +82,10 @@ button:hover {
 .btn-orange {
 	color: var(--primary-orange);
 }
-.btn-orange {
+.btn-dark-cyan {
 	color: var(--primary-dark-cyan);
 }
-.btn-orange {
+.btn-very-dark-cyan {
 	color: var(--primary-very-dark-cyan);
 }
 
