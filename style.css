@@ -23,7 +23,6 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 
 /* heading & paragraph */
@@ -41,6 +40,7 @@ p {
 .container {
 	display: flex;
 	max-width: 800px;
+	margin: 5%;
 }
 .column-container {
 	padding: 30px 30px;
@@ -51,11 +51,9 @@ p {
 	background: var(--primary-orange);
 	border-radius: 10px 0 0 10px;
 }
-
 .column-container:nth-child(2) {
 	background: var(--primary-dark-cyan);
 }
-
 .column-container:nth-child(3) {
 	background: var(--primary-very-dark-cyan);
 	border-radius: 0 10px 10px 0;
@@ -93,6 +91,17 @@ button:hover {
 
 /* Small Phones: from 0 to 375px */
 @media only screen and (max-width: 375px) {
+	.container {
+		flex-direction: column;
+		margin: 5%;
+	}
+
+	.column-container:nth-child(1) {
+		border-radius: 10px 10px 0 0;
+	}
+	.column-container:nth-child(3) {
+		border-radius: 0 0 10px 10px;
+	}
 }
 
 /* media queries */
