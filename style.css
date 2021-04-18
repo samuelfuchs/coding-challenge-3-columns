@@ -48,6 +48,8 @@ p {
 .column-container {
 	padding: 30px 30px;
 	width: auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .column-container:nth-child(1) {
@@ -65,7 +67,7 @@ p {
 /* buttons */
 button {
 	font-family: inherit;
-	min-width: 120px;
+	width: 120px;
 	height: 40px;
 	cursor: pointer;
 	border-radius: 20px;
