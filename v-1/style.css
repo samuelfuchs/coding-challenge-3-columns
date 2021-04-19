@@ -17,12 +17,14 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	background-color: var(--light-gray);
+	height: 100vh;
 }
 section {
-	min-height: 100vh;
+	min-height: 90%;
+	width: 50%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
 }
 
 /* heading & paragraph */
@@ -39,15 +41,9 @@ p {
 /* Container Settings */
 .container {
 	display: flex;
-	max-width: 800px;
-	margin: 5%;
 }
 .column-container {
-	padding: 30px 30px;
-	width: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	padding: 50px 30px;
 }
 
 .column-container:nth-child(1) {
@@ -60,6 +56,10 @@ p {
 .column-container:nth-child(3) {
 	background: var(--primary-very-dark-cyan);
 	border-radius: 0 10px 10px 0;
+}
+
+.attribution {
+	height: 10vh;
 }
 
 /* buttons */
