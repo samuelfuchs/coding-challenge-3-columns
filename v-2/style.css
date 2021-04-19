@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* Colors */
+:root {
+	--primary-orange: hsl(31, 77%, 52%);
+	--primary-dark-cyan: hsl(184, 100%, 22%);
+	--primary-very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--light-gray: hsl(0, 0%, 95%);
+	--box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Settings */
+body {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: var(--light-gray);
+}
+section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* heading & paragraph */
+h1 {
+	color: var(--transparent-white);
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+p {
+	color: var(--transparent-white);
+	padding-bottom: 50px;
+}
+
+/* Container Settings */
+.container {
+	display: flex;
+	max-width: 800px;
+	margin: 5%;
+}
+.column-container {
+	padding: 30px 30px;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.column-container:nth-child(1) {
+	background: var(--primary-orange);
+	border-radius: 10px 0 0 10px;
+}
+.column-container:nth-child(2) {
+	background: var(--primary-dark-cyan);
+}
+.column-container:nth-child(3) {
+	background: var(--primary-very-dark-cyan);
+	border-radius: 0 10px 10px 0;
+}
+
+/* buttons */
+button {
+	font-family: inherit;
+	width: 120px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 20px;
+	border: 3px solid var(--light-gray);
+	font-size: 15px;
+	outline: none;
+	background: var(--light-gray);
+	transition: transform 0.2s ease;
+}
+button:hover {
+	transform: scale(1.1);
+	background: inherit;
+	color: var(--light-gray);
+}
+
+/* button text color */
+.btn-orange {
+	color: var(--primary-orange);
+}
+.btn-dark-cyan {
+	color: var(--primary-dark-cyan);
+}
+.btn-very-dark-cyan {
+	color: var(--primary-very-dark-cyan);
+}
+
+/* Small Phones: from 0 to 375px */
+@media only screen and (max-width: 375px) {
+	.container {
+		flex-direction: column;
+		margin: 5%;
+	}
+
+	.column-container:nth-child(1) {
+		border-radius: 10px 10px 0 0;
+	}
+	.column-container:nth-child(3) {
+		border-radius: 0 0 10px 10px;
+	}
+}
