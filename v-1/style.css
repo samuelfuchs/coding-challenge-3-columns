@@ -18,6 +18,7 @@ body {
 	/* box-sizing: border-box; */
 	background-color: var(--light-gray);
 	height: 100vh;
+	outline: var(--primary-orange);
 }
 section {
 	height: 90%;
